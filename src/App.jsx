@@ -21,10 +21,22 @@ const projects = [
     description:
       "A fintech project built to explore digital payment workflows, authentication, and backend application development.",
     stack: ["Node.js", "Express", "PostgreSQL"],
-    live: "",
+    live: "https://good-pay.vercel.app/",
     github: "https://github.com/engrGoodluck/GoodPay",
     color: "mint",
     status: "IN DEVELOPMENT",
+  },
+  {
+    number: "03",
+    name: "Nilaxai Group",
+    type: "Real estate website",
+    description:
+      "A modern bilingual real estate website for Nilaxai Group, featuring English and Lao translations, property information, and a polished responsive experience.",
+    stack: ["React", "JavaScript", "Vite", "CSS"],
+    live: "https://nilaxai-group-co.vercel.app/",
+    github: "https://github.com/engrGoodluck/Nilaxai-Real-estate-website",
+    color: "mint",
+    status: "LIVE DEMO",
   },
 ];
 
@@ -64,6 +76,7 @@ function ProjectCard({ project }) {
           </span>
           <span className="project-art-label">{project.type}</span>
         </div>
+
         {project.name === "PulseBoard" ? (
           <div className="mini-dashboard">
             <div className="mini-metric">
@@ -83,6 +96,28 @@ function ProjectCard({ project }) {
               <span>Last 12 months</span>
             </div>
           </div>
+        ) : project.name === "Nilaxai Group" ? (
+          <div className="nilaxai-art">
+            <div className="nilaxai-brand-row">
+              <span className="nilaxai-mark">N</span>
+              <div>
+                <strong>NILAXAI</strong>
+                <small>GROUP OF COMPANIES</small>
+              </div>
+            </div>
+
+            <div className="nilaxai-property-scene">
+              <span className="nilaxai-sun" />
+              <div className="nilaxai-building building-back" />
+              <div className="nilaxai-building building-front" />
+              <div className="nilaxai-ground" />
+            </div>
+
+            <div className="nilaxai-art-footer">
+              <span>REAL ESTATE</span>
+              <span>ENGLISH · LAO</span>
+            </div>
+          </div>
         ) : (
           <div className="goodpay-art">
             <div className="goodpay-symbol">
@@ -97,6 +132,7 @@ function ProjectCard({ project }) {
             </div>
           </div>
         )}
+
         <span className="art-number">{project.number}</span>
       </div>
       <div className="project-card-body">
