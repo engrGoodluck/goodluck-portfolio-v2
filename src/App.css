@@ -1925,3 +1925,113 @@ button {
   font-weight: 800;
   letter-spacing: 1px;
 }
+
+/* SAVE THE MILK PROJECT ART */
+
+.savemilk-art {
+  height: 100%;
+  min-height: 280px;
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:
+    radial-gradient(circle at 15% 20%, #fff 0, transparent 30%),
+    linear-gradient(145deg, #fff9f8, #f4d9da 55%, #f0c4c8);
+  color: #454047;
+}
+
+.savemilk-brand {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.savemilk-flower {
+  color: #d98e99;
+  font-size: 23px;
+}
+
+.savemilk-brand strong {
+  color: #d88991;
+  font-family: Georgia, serif;
+  font-size: 29px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.savemilk-brand small {
+  margin-top: 5px;
+  color: #777078;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.savemilk-products {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 13px;
+  padding-top: 15px;
+}
+
+.savemilk-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  background: linear-gradient(145deg, #fff, #f9eeee);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 12px 25px rgba(117, 75, 82, 0.13);
+}
+
+.savemilk-product span {
+  color: #d88991;
+  font-size: 22px;
+}
+
+.savemilk-product strong {
+  color: #51464c;
+  font-family: Georgia, serif;
+  font-size: 12px;
+}
+
+.savemilk-product small {
+  color: #a18d93;
+  font-size: 8px;
+}
+
+.savemilk-bottle {
+  width: 73px;
+  height: 115px;
+  border-radius: 13px 13px 17px 17px;
+}
+
+.savemilk-box {
+  width: 91px;
+  height: 140px;
+  border-radius: 5px;
+}
+
+.savemilk-kit {
+  width: 75px;
+  height: 105px;
+  border-radius: 7px;
+}
+
+.savemilk-art-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: #997b83;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}

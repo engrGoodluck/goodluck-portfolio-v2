@@ -38,6 +38,18 @@ const projects = [
     color: "mint",
     status: "LIVE DEMO",
   },
+  {
+    number: "04",
+    name: "Save The Milk",
+    type: "Motherhood & Baby Care E-commerce",
+    description:
+      "A premium e-commerce website concept for motherhood, baby nutrition, maternal care, and breastmilk shipping services, featuring a modern shopping experience and elegant responsive design.",
+    stack: ["React", "JavaScript", "Vite", "CSS"],
+    live: "https://save-the-milk.vercel.app/",
+    github: "https://github.com/engrGoodluck/Save-The-Milk",
+    color: "lavender",
+    status: "LIVE DEMO",
+  },
 ];
 
 const skills = [
@@ -63,6 +75,7 @@ const skills = [
 function FloatingOrb({ className = "" }) {
   return <span aria-hidden="true" className={`floating-orb ${className}`} />;
 }
+
 
 function ProjectCard({ project }) {
   return (
@@ -118,6 +131,39 @@ function ProjectCard({ project }) {
               <span>ENGLISH · LAO</span>
             </div>
           </div>
+        ) : project.name === "Save The Milk" ? (
+          <div className="savemilk-art">
+            <div className="savemilk-brand">
+              <span className="savemilk-flower">✿</span>
+              <strong>save the milk</strong>
+              <small>MOTHERHOOD · CARE · LOVE</small>
+            </div>
+
+            <div className="savemilk-products">
+              <div className="savemilk-product savemilk-bottle">
+                <span>♡</span>
+                <strong>baby</strong>
+                <small>care</small>
+              </div>
+
+              <div className="savemilk-product savemilk-box">
+                <span>✿</span>
+                <strong>mother</strong>
+                <small>wellness</small>
+              </div>
+
+              <div className="savemilk-product savemilk-kit">
+                <span>♡</span>
+                <strong>milk</strong>
+                <small>shipping kit</small>
+              </div>
+            </div>
+
+            <div className="savemilk-art-footer">
+              <span>MADE FOR MOTHERHOOD</span>
+              <span>SHOP WITH LOVE ♡</span>
+            </div>
+          </div>
         ) : (
           <div className="goodpay-art">
             <div className="goodpay-symbol">
@@ -135,21 +181,26 @@ function ProjectCard({ project }) {
 
         <span className="art-number">{project.number}</span>
       </div>
+
       <div className="project-card-body">
         <div className="project-status">
           <span />
           {project.status}
         </div>
+
         <h3>
           {project.name}
           <span className="accent-dot">.</span>
         </h3>
+
         <p>{project.description}</p>
+
         <div className="project-tags">
           {project.stack.map((item) => (
             <span key={item}>{item}</span>
           ))}
         </div>
+
         <div className="project-actions">
           {project.live && (
             <a
@@ -161,6 +212,7 @@ function ProjectCard({ project }) {
               Live preview <span>↗</span>
             </a>
           )}
+
           <a
             className="project-action secondary-action"
             href={project.github}
@@ -174,6 +226,7 @@ function ProjectCard({ project }) {
     </article>
   );
 }
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
