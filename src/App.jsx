@@ -14,18 +14,20 @@ const projects = [
     color: "lavender",
     status: "LIVE DEMO",
   },
+
   {
     number: "02",
     name: "GoodPay",
-    type: "Fintech application",
+    type: "Digital wallet & fintech application",
     description:
-      "A fintech project built to explore digital payment workflows, authentication, and backend application development.",
-    stack: ["Node.js", "Express", "PostgreSQL"],
-    live: "https://good-pay.vercel.app/",
-    github: "https://github.com/engrGoodluck/GoodPay",
+      "A full-stack digital wallet application featuring secure authentication, email OTP verification, wallet management, money transfers, transaction history, beneficiary management, and a modern financial dashboard.",
+    stack: ["React", "JavaScript", "Node.js", "Express", "PostgreSQL"],
+    live: "https://goodpayapp.vercel.app/",
+    github: "https://github.com/engrGoodluck/GoodPay-Platform",
     color: "mint",
-    status: "IN DEVELOPMENT",
+    status: "LIVE DEMO",
   },
+
   {
     number: "03",
     name: "Nilaxai Group",
@@ -75,7 +77,6 @@ const skills = [
 function FloatingOrb({ className = "" }) {
   return <span aria-hidden="true" className={`floating-orb ${className}`} />;
 }
-
 
 function ProjectCard({ project }) {
   return (
@@ -226,7 +227,6 @@ function ProjectCard({ project }) {
     </article>
   );
 }
-
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
