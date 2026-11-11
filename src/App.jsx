@@ -509,8 +509,8 @@ function App() {
                 More in the making<span className="accent-dot">.</span>
               </h3>
               <p>
-                An e-commerce experience, an advanced calculator, and a real
-                estate website are on the roadmap.
+                E-commerce experience, Advanced softwares, Real
+                estate website, and lots more are on the roadmap.
               </p>
               <div className="coming-progress">
                 <span />
